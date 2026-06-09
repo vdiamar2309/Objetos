@@ -11,6 +11,7 @@ public class Main {
 
         boolean bucle = true;
         while (bucle) {
+            System.out.println();
             System.out.println(ayuda);
             int dinero = 0;
             int eleccion = MiEntradaSalida.solicitarEnteroPositivo("Elige una opcion");

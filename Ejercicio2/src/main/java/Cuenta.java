@@ -37,6 +37,8 @@ public class Cuenta {
         if (dineroCuenta<cantidad) {
             throw new CuentaException("No tienes dinero en la cuenta");
         }
+        System.out.println();
+        if (cantidad==0) throw new CuentaException("La cantidad de dinero no puede ser 0");
         dineroCuenta-=cantidad;
         efectivo+=cantidad;
         numeroReintegros++;
@@ -45,6 +47,8 @@ public class Cuenta {
         if (efectivo<cantidad) {
             throw new CuentaException("No tienes suficiente dinero en efectivo");
         }
+        System.out.println();
+        if (cantidad==0) throw new CuentaException("La cantidad de dinero no puede ser 0");
     efectivo-=cantidad;
         dineroCuenta+=cantidad;
         numeroReintegros++;
